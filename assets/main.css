@@ -187,6 +187,41 @@ slide p{
 /* --- END OF CSS FOR GALLERY IN DESIGN PAGE --- */
 
 
+.divVideo{
+  background: #303030 url(images/bg.jpg);
+  background-position: center;
+  background-size: 100% 100%;
+  text-align: center;
+  margin: 0;
+}
+
+.divVideo > iframe{
+  display: inline-block;
+  margin: 13px;
+}
+
+.aboutVideos{
+  background:#6d6d6d;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  text-shadow: 3px 3px #303030;
+}
+
+.aboutVideos > h1{
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.aboutVideos > p{
+  text-align: center;
+  font-size: 20px;
+  margin: 0;
+}
+
 .aboutMe{
   background: white;
   padding: 10px;
