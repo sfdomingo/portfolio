@@ -83,7 +83,7 @@ slider > *{
 slide:nth-child(1){
   left: 0%;
   animation-delay: -1s;
-  background-image: url('images/Slide1.jpg');
+  background-image: url('images/Slide4.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -107,7 +107,7 @@ slide:nth-child(3){
 slide:nth-child(4){
   left: 100%;
   animation-delay: 8s;
-  background-image: url('images/Slide4.jpg');
+  background-image: url('images/Slide1.jpg');
   background-size: cover;
   background-position: center;
 }
