@@ -89,6 +89,7 @@ slide:nth-child(1){
 }
 
 slide:nth-child(2){
+  left: 100%;
   animation-delay: 2s;
   background-image: url('images/Slide2.jpg');
   background-size: cover;
@@ -96,6 +97,7 @@ slide:nth-child(2){
 }
 
 slide:nth-child(3){
+  left: 100%;
   animation-delay: 5s;
   background-image: url('images/Slide3.jpg');
   background-size: cover;
@@ -103,7 +105,7 @@ slide:nth-child(3){
 }
 
 slide:nth-child(4){
-  left: 0%;
+  left: 100%;
   animation-delay: 8s;
   background-image: url('images/Slide4.jpg');
   background-size: cover;
