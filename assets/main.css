@@ -1,259 +1,297 @@
-header{
-  background: #1f1f1f url(images/header.jpg) 50% 15%;
-  font-family: calibri;
-  text-align: center;
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
-body  {
-  width: 100%;
-  height: 100%
-  padding: 0;
-  margin: 0px;
-  background:white, #cccccc;
-  font-family: calibri;
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(148, 148, 148, 0.7);
+    box-shadow: inset 0 0 3px black;
 }
 
-header img{
-  padding-top: 10px;
-  margin-bottom: -10px;
+header {
+    background: #1f1f1f url(images/header.jpg) 50% 15%;
+    font-family: calibri;
+    text-align: center;
 }
 
-header h1{
-  margin: -20px;
-  color: white;
-  font-family: 'Permanent Marker', Arial;
-  font-size: 72px;
-  text-shadow: 2px 2px #013979;
-  padding-top: 15px;
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0px;
+    background: white, #cccccc;
+    font-family: calibri;
 }
 
-nav ul{
-  /*display: inline;*/
-  padding-left: 0px;
+header img {
+    padding-top: 10px;
+    margin-bottom: -10px;
 }
 
-nav ul li{
-  display: inline-block;
-  text-shadow: 2px 2px #013979;
-  font-weight: bold;
-  font-size: 20px;
-  padding: 5px 30px 0px 30px; /* Separate each element from each other */
-  /*padding-bottom: 10px;*/
+header h1 {
+    margin: -20px;
+    color: white;
+    font-family: 'Permanent Marker', Arial;
+    font-size: 72px;
+    text-shadow: 2px 2px #013979;
+    padding-top: 15px;
 }
 
-nav ul li a{
-  color: white;
-  text-decoration: none;
+nav ul {
+    /*display: inline;*/
+    padding-left: 0px;
 }
 
-nav ul li a:visited{ /* Visited link inside the navigation bar */
-  color: white;
+nav ul li {
+    display: inline-block;
+    text-shadow: 2px 2px #013979;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px 30px 0px 30px;
+    /* Separate each element from each other */
+    /*padding-bottom: 10px;*/
 }
 
-nav ul li a:hover{ /* Link animation when the mouse hovers over it */
-  color: #94e0df;
-  font-style: bold;
+nav ul li a {
+    color: white;
+    text-decoration: none;
 }
 
-nav ul li a:active{ /* Animation when mouse clicks the link */
-  color: #666666;
+nav ul li a:visited {
+    /* Visited link inside the navigation bar */
+    color: white;
 }
+
+nav ul li a:hover {
+    /* Link animation when the mouse hovers over it */
+    color: #94e0df;
+    font-style: bold;
+}
+
+nav ul li a:active {
+    /* Animation when mouse clicks the link */
+    color: #666666;
+}
+
 
 /* ---- CSS FOR SLIDER IN HOMEPAGE ---- */
-slider{
-  margin: 0;
-  display: block;
-  width: 100%;
-  height:600px;
-  background-color: #1f1f1f;
-  overflow: hidden;
-  position: absolute;
+
+slider {
+    margin: 0;
+    display: block;
+    width: 100%;
+    height: 600px;
+    background-color: #1f1f1f;
+    overflow: hidden;
+    position: absolute;
 }
 
-slider > *{
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: #1f1f1f;
-  animation: slide 12s infinite;
-  overflow: hidden;
+slider>* {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #1f1f1f;
+    animation: slide 12s infinite;
+    overflow: hidden;
 }
 
-slide:nth-child(1){
-  left: 0%;
-  animation-delay: -1s;
-  background-image: url('images/Slide4.jpg');
-  background-size: cover;
-  background-position: center;
+slide:nth-child(1) {
+    left: 0%;
+    animation-delay: -1s;
+    background-image: url('images/Slide4.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
-slide:nth-child(2){
-  left: 100%;
-  animation-delay: 2s;
-  background-image: url('images/Slide2.jpg');
-  background-size: cover;
-  background-position: center;
+slide:nth-child(2) {
+    left: 100%;
+    animation-delay: 2s;
+    background-image: url('images/Slide2.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
-slide:nth-child(3){
-  left: 100%;
-  animation-delay: 5s;
-  background-image: url('images/Slide3.jpg');
-  background-size: cover;
-  background-position: center;
+slide:nth-child(3) {
+    left: 100%;
+    animation-delay: 5s;
+    background-image: url('images/Slide3.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
-slide:nth-child(4){
-  left: 100%;
-  animation-delay: 8s;
-  background-image: url('images/Slide1.jpg');
-  background-size: cover;
-  background-position: center;
+slide:nth-child(4) {
+    left: 100%;
+    animation-delay: 8s;
+    background-image: url('images/Slide1.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
-slide p{
-  font-family: 'Righteous', cursive, Arial;
-  text-shadow: 3px 3px #303030;
-  font-size: 45px;
-  text-align: center;
-  display: inline-block;
-  width: 100%;
-  margin-top: 300px;
-  color: white;
-  background: none;
+slide p {
+    font-family: 'Righteous', cursive, Arial;
+    text-shadow: 3px 3px #303030;
+    font-size: 45px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin-top: 300px;
+    color: white;
+    background: none;
 }
 
 @keyframes slide {
-  0% {left: 100%; width: 100%; }
-  5% {left: 0%;}
-  25% {left: 0%;}
-  30% {left: -100%; width: 100%;}
-  30.0001% { left: -100%; width: 0%;}
-  100% {left: 100%; width: 0%;}
+    0% {
+        left: 100%;
+        width: 100%;
+    }
+    5% {
+        left: 0%;
+    }
+    25% {
+        left: 0%;
+    }
+    30% {
+        left: -100%;
+        width: 100%;
+    }
+    30.0001% {
+        left: -100%;
+        width: 0%;
+    }
+    100% {
+        left: 100%;
+        width: 0%;
+    }
 }
 
-.divSlideshow{
-  background: #303030;
-  width: 100%;
-  min-height: 600px;
-  max-height: 600px;
+.divSlideshow {
+    background: #303030;
+    width: 100%;
+    min-height: 600px;
+    max-height: 600px;
 }
+
+
 /* ---- END OF CSS FOR SLIDER IN HOMEPAGE ---- */
 
-.fixedHeader{
-  width: 100%;
-  max-width: 100%;
-  height: 265px;
-  max-height: 265px;
-  display: inline-block;
+.fixedHeader {
+    width: 100%;
+    max-width: 100%;
+    height: 265px;
+    max-height: 265px;
+    display: inline-block;
 }
 
-.divSlideshow{
-  background: #303030;
-  width: 100%;
-  min-height: 600px;
-  max-height: 600px;
+.divSlideshow {
+    background: #303030;
+    width: 100%;
+    min-height: 600px;
+    max-height: 600px;
 }
 
-.divSeparator{
-  background: #303030;
-  width: 100%;
-  min-height: 13px;
+.divSeparator {
+    background: #303030;
+    width: 100%;
+    min-height: 13px;
 }
+
 
 /* --- CSS FOR GALLERY IN DESIGN PAGE --- */
-.gallery{
-  background: #303030 url(images/bg.jpg);
-  background-position: center;
-  background-size: 100% 100%;
-  text-align: center;
-  margin: 0;
+
+.gallery {
+    background: #303030 url(images/bg.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    text-align: center;
+    margin: 0;
 }
 
-.gallery img{
-  display: inline-block;
-  width: 380px;
-  padding: 8px;
-  filter: grayscale(100);
-  transition: 1s;
+.gallery img {
+    display: inline-block;
+    width: 380px;
+    padding: 8px;
+    filter: grayscale(100);
+    transition: 1s;
 }
 
-.gallery img:hover{
-  filter: grayscale(0);
-  transform: scale(1.1);
+.gallery img:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
 }
+
+
 /* --- END OF CSS FOR GALLERY IN DESIGN PAGE --- */
 
-
-.divVideo{
-  background: #303030 url(images/bg.jpg);
-  background-position: center;
-  background-size: 100% 100%;
-  text-align: center;
-  margin: 0;
+.divVideo {
+    background: #303030 url(images/bg.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    text-align: center;
+    margin: 0;
 }
 
-.divVideo > iframe{
-  display: inline-block;
-  margin: 13px;
+.divVideo>iframe {
+    display: inline-block;
+    margin: 13px;
 }
 
-.aboutVideos{
-  background:#6d6d6d;
-  padding: 10px;
-  font-family: 'Poppins', sans-serif;
-  color: white;
-  text-shadow: 3px 3px #303030;
+.aboutVideos {
+    background: #6d6d6d;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-shadow: 3px 3px #303030;
 }
 
-.aboutVideos > h1{
-  margin: 0;
-  text-align: center;
-  font-weight: bold;
-  font-size: 50px;
-  font-family: 'Poppins', sans-serif;
+.aboutVideos>h1 {
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.aboutVideos > p{
-  text-align: center;
-  font-size: 20px;
-  margin: 0;
+.aboutVideos>p {
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
 }
 
-.aboutMe{
-  background: white;
-  padding: 10px;
-  font-family: 'Poppins', sans-serif;
+.aboutMe {
+    background: white;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.aboutMe > h1{
-  text-align: center;
-  font-weight: bold;
-  font-size: 50px;
-  font-family: 'Poppins', sans-serif;
+.aboutMe>h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.aboutMe > p{
-  text-align: center;
-  font-size: 20px;
-  margin: 0;
+.aboutMe>p {
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
 }
 
-.aboutMe ul li{
-  padding-left: 16px;
-  font-size: 15px;
-  list-style: none;
+.aboutMe ul li {
+    padding-left: 16px;
+    font-size: 15px;
+    list-style: none;
 }
 
-.divFooter > ul{
-  list-style: none;
-  text-decoration: none;
-  font-size: 16px;
+.divFooter>ul {
+    list-style: none;
+    text-decoration: none;
+    font-size: 16px;
 }
 
-footer{
-  background: #999;
-  background-blend-mode: color-dodge 100%;
-  text-align: center;
+footer {
+    background: #999;
+    background-blend-mode: color-dodge 100%;
+    text-align: center;
 }
