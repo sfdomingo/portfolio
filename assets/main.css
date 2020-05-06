@@ -218,8 +218,14 @@ slide p {
     padding: 10px 0 10px 0;
 }
 
+.gallery-img {
+    /* background-color: red; */
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+}
+
 .gallery-img img {
-    /* display: inline-block; */
     width: 380px;
     padding: 8px;
     filter: grayscale(100);
@@ -229,6 +235,19 @@ slide p {
 .gallery-img img:hover {
     filter: grayscale(0);
     transform: scale(1.1);
+}
+
+@media screen and (max-width: 1150px) {
+    .gallery-img img {
+        width: 32.5%;
+        height: auto;
+        padding: 0px;
+        padding-bottom: 5px;
+    }
+    .gallery-img {
+        padding-left: 15px;
+        width: 100%;
+    }
 }
 
 
@@ -294,16 +313,12 @@ slide p {
     list-style: none;
 }
 
-.divFooter>ul {
-    list-style: none;
-    text-decoration: none;
-    font-size: 16px;
-}
-
 footer {
-    background: #999;
+    background: #222222;
     background-blend-mode: color-dodge 100%;
     text-align: center;
+    color: white;
+    font-size: 12px;
 }
 
 .construction {
