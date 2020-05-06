@@ -200,23 +200,33 @@ slide p {
 
 /* --- CSS FOR GALLERY IN DESIGN PAGE --- */
 
-.gallery {
+.galleryWrapper {
     background: #303030 url(images/bg.jpg);
     background-position: center;
     background-size: 100% 100%;
-    text-align: center;
+    /* text-align: center; */
     margin: 0;
 }
 
-.gallery img {
-    display: inline-block;
+.gallery {
+    /* background-color: white; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+
+.gallery-img img {
+    /* display: inline-block; */
     width: 380px;
     padding: 8px;
     filter: grayscale(100);
     transition: 1s;
 }
 
-.gallery img:hover {
+.gallery-img img:hover {
     filter: grayscale(0);
     transform: scale(1.1);
 }
@@ -232,7 +242,7 @@ slide p {
     margin: 0;
 }
 
-.divVideo>iframe {
+.divVideo iframe {
     display: inline-block;
     margin: 13px;
 }
@@ -245,7 +255,7 @@ slide p {
     text-shadow: 3px 3px #303030;
 }
 
-.aboutVideos>h1 {
+.aboutVideos h1 {
     margin: 0;
     text-align: center;
     font-weight: bold;
@@ -253,7 +263,7 @@ slide p {
     font-family: 'Poppins', sans-serif;
 }
 
-.aboutVideos>p {
+.aboutVideos p {
     text-align: center;
     font-size: 20px;
     margin: 0;
@@ -294,4 +304,18 @@ footer {
     background: #999;
     background-blend-mode: color-dodge 100%;
     text-align: center;
+}
+
+.construction {
+    background-color: #999;
+    padding: 10px;
+    padding-bottom: 1000px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.construction h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
 }
