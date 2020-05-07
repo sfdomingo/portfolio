@@ -35,7 +35,7 @@ body {
 }
 
 #home_body {
-    overflow-x: initial;
+    overflow-x: visible;
 }
 
 header img {
