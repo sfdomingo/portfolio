@@ -31,6 +31,11 @@ body {
     margin: 0px;
     background: white;
     font-family: calibri;
+    overflow-x: hidden;
+}
+
+#home_body {
+    overflow-x: initial;
 }
 
 header img {
@@ -286,11 +291,6 @@ slide p {
 
 
 /* VIDEOS SECTION */
-
-#body-video {
-    max-width: 100%;
-    overflow-x: hidden;
-}
 
 .divVideo {
     background: #303030 url(images/bg.jpg);
