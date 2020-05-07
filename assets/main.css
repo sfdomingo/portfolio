@@ -58,16 +58,6 @@ nav ul li {
     padding: 5px 30px 0px 30px;
 }
 
-@media screen and (max-width: 864px) {
-    header h1 {
-        font-size: 48px;
-    }
-    nav ul li {
-        font-size: 20px;
-        padding: 5px 10px 0px 10px;
-    }
-}
-
 nav ul li a {
     color: white;
     text-decoration: none;
@@ -87,6 +77,16 @@ nav ul li a:hover {
 nav ul li a:active {
     /* Animation when mouse clicks the link */
     color: #666666;
+}
+
+@media screen and (max-width: 864px) {
+    header h1 {
+        font-size: 48px;
+    }
+    nav ul li {
+        font-size: 20px;
+        padding: 5px 10px 0px 10px;
+    }
 }
 
 
@@ -239,7 +239,6 @@ slide p {
     /* background-color: red; */
     justify-content: center;
     align-items: center;
-    /* width: 100%; */
 }
 
 .gallery-img img {
@@ -269,7 +268,7 @@ slide p {
 
 @media screen and (max-width: 864px) {
     .gallery-img img {
-        width: 100%;
+        width: 98%;
         height: auto;
         padding: 0px;
         padding-bottom: 5px;
@@ -283,6 +282,9 @@ slide p {
 
 /* --- END OF CSS FOR GALLERY IN DESIGN PAGE --- */
 
+
+/* VIDEOS SECTION */
+
 .divVideo {
     background: #303030 url(images/bg.jpg);
     background-position: center;
@@ -294,6 +296,8 @@ slide p {
 .divVideo iframe {
     display: inline-block;
     margin: 13px;
+    width: 600px;
+    height: 337.5px;
 }
 
 .aboutVideos {
@@ -317,6 +321,22 @@ slide p {
     font-size: 20px;
     margin: 0;
 }
+
+@media screen and (max-width: 864px) {
+    .divVideo iframe {
+        width: 500px;
+        height: 285px;
+    }
+    .aboutVideos h1 {
+        font-size: 32px;
+    }
+    .aboutVideos p {
+        font-size: 16px;
+    }
+}
+
+
+/* end of videos section */
 
 .aboutMe {
     background: white;
