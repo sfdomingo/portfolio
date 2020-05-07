@@ -56,8 +56,16 @@ nav ul li {
     font-weight: bold;
     font-size: 20px;
     padding: 5px 30px 0px 30px;
-    /* Separate each element from each other */
-    /*padding-bottom: 10px;*/
+}
+
+@media screen and (max-width: 864px) {
+    header h1 {
+        font-size: 48px;
+    }
+    nav ul li {
+        font-size: 20px;
+        padding: 5px 10px 0px 10px;
+    }
 }
 
 nav ul li a {
@@ -259,7 +267,7 @@ slide p {
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 864px) {
     .gallery-img img {
         width: 100%;
         height: auto;
