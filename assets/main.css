@@ -324,8 +324,8 @@ slide p {
 
 @media screen and (max-width: 864px) {
     .divVideo iframe {
-        width: 500px;
-        height: 285px;
+        width: 95%;
+        /* height: 270px; */
     }
     .aboutVideos h1 {
         font-size: 32px;
