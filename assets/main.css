@@ -13,7 +13,7 @@ html {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
 header {
@@ -24,10 +24,10 @@ header {
 
 body {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     padding: 0;
     margin: 0px;
-    background: white, #cccccc;
+    background: red;
     font-family: calibri;
 }
 
@@ -208,6 +208,8 @@ slide p {
 /* --- CSS FOR GALLERY IN DESIGN PAGE --- */
 
 .galleryWrapper {
+    width: 100%;
+    height: auto;
     background: #303030 url(images/bg.jpg);
     background-position: center;
     background-size: 100% 100%;
@@ -336,6 +338,14 @@ slide p {
 }
 
 footer {
+    background: #222222;
+    background-blend-mode: color-dodge 100%;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+}
+
+.footer {
     background: #222222;
     background-blend-mode: color-dodge 100%;
     text-align: center;
