@@ -287,6 +287,11 @@ slide p {
 
 /* VIDEOS SECTION */
 
+#body-video {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .divVideo {
     background: #303030 url(images/bg.jpg);
     background-position: center;
@@ -326,7 +331,7 @@ slide p {
 
 @media screen and (max-width: 864px) {
     .divVideo iframe {
-        width: 460px;
+        width: 400px;
         height: 270px;
     }
     .aboutVideos h1 {
