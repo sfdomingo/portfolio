@@ -31,6 +31,12 @@ body {
     font-family: calibri;
 }
 
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 header img {
     padding-top: 10px;
     margin-bottom: -10px;
