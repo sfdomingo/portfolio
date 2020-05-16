@@ -44,10 +44,10 @@ header img {
 }
 
 header h1 {
-    margin: -20px;
-    color: white;
+    margin: -25px;
+    color: rgb(240, 240, 240);
     font-family: 'Permanent Marker', Arial;
-    font-size: 72px;
+    font-size: 65px;
     text-shadow: 2px 2px #013979;
     padding-top: 15px;
 }
@@ -220,157 +220,33 @@ slide p {
 }
 
 
-/* --- CSS FOR GALLERY IN DESIGN PAGE --- */
-
-.galleryWrapper {
-    width: 100%;
-    height: auto;
-    background: #303030 url(images/bg.jpg);
-    background-position: center;
-    background-size: 100% 100%;
-    /* text-align: center; */
-    margin: 0;
-}
-
-.gallery {
-    /* background-color: white; */
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 0 10px 0;
-}
-
-.gallery-img {
-    /* background-color: red; */
-    justify-content: center;
-    align-items: center;
-}
-
-.gallery-img img {
-    width: 380px;
-    padding: 8px;
-    filter: grayscale(100);
-    transition: 1s;
-}
-
-.gallery-img img:hover {
-    filter: grayscale(0);
-    transform: scale(1.1);
-}
-
-@media screen and (max-width: 1150px) {
-    .gallery-img img {
-        width: 32.5%;
-        height: auto;
-        padding: 0px;
-        padding-bottom: 5px;
-    }
-    .gallery-img {
-        padding-left: 15px;
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 864px) {
-    .gallery-img img {
-        width: 98%;
-        height: auto;
-        padding: 0px;
-        padding-bottom: 5px;
-    }
-    .gallery-img {
-        padding-left: 15px;
-        width: 100%;
-    }
-}
-
-
-/* --- END OF CSS FOR GALLERY IN DESIGN PAGE --- */
-
-
-/* VIDEOS SECTION */
-
-.divVideo {
-    background: #303030 url(images/bg.jpg);
-    background-position: center;
-    background-size: 100% 100%;
-    text-align: center;
-    margin: 0;
-}
-
-.divVideo iframe {
-    display: inline-block;
-    margin: 13px;
-    width: 600px;
-    height: 337.5px;
-}
-
-.aboutVideos {
-    background: #6d6d6d;
-    padding: 10px;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    text-shadow: 3px 3px #303030;
-}
-
-.aboutVideos h1 {
-    margin: 0;
-    text-align: center;
-    font-weight: bold;
-    font-size: 50px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.aboutVideos p {
-    text-align: center;
-    font-size: 20px;
-    margin: 0;
-}
-
-@media screen and (max-width: 864px) {
-    .divVideo iframe {
-        width: 400px;
-        height: 270px;
-    }
-    .aboutVideos h1 {
-        font-size: 32px;
-    }
-    .aboutVideos p {
-        font-size: 16px;
-    }
-}
-
-
-/* end of videos section */
+/* About me section in homepage */
 
 .aboutMe {
-    background: white;
+    background: #303030;
     width: 100%;
     height: auto;
     padding: 10px;
     font-family: 'Poppins', sans-serif;
 }
 
-.aboutMe>h1 {
+.about-me-text {
     text-align: center;
-    font-weight: bold;
-    font-size: 50px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.aboutMe>p {
-    text-align: center;
-    font-size: 20px;
+    font-size: 23px;
+    color: white;
     margin: 0;
 }
 
-.aboutMe ul li {
-    padding-left: 16px;
-    font-size: 15px;
-    list-style: none;
+.about-me-contact {
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    margin: 0;
+    margin-top: -12px;
 }
+
+
+/* End of about-me section */
 
 footer {
     background: #222222;

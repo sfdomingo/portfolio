@@ -1,0 +1,50 @@
+.divVideo {
+    background: #303030 url(images/bg.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    text-align: center;
+    margin: 0;
+}
+
+.divVideo iframe {
+    display: inline-block;
+    margin: 13px;
+    width: 600px;
+    height: 337.5px;
+}
+
+.aboutVideos {
+    background: #303030;
+    padding: 6px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-shadow: 3px 3px #303030;
+}
+
+.aboutVideos h1 {
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 43px;
+    text-shadow: 2px 2px #3c7aff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.aboutVideos p {
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+}
+
+@media screen and (max-width: 864px) {
+    .divVideo iframe {
+        width: 400px;
+        height: 270px;
+    }
+    .aboutVideos h1 {
+        font-size: 32px;
+    }
+    .aboutVideos p {
+        font-size: 16px;
+    }
+}
