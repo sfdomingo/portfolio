@@ -96,6 +96,14 @@ nav ul li a:active {
     }
 }
 
+.fixedHeader {
+    width: 100%;
+    max-width: 100%;
+    height: 265px;
+    max-height: 265px;
+    display: inline-block;
+}
+
 
 /* ---- CSS FOR SLIDER IN HOMEPAGE ---- */
 
@@ -103,10 +111,11 @@ slider {
     margin: 0;
     display: block;
     width: 100%;
-    height: 600px;
+    height: 800px;
     background-color: #1f1f1f;
     overflow: hidden;
-    position: absolute;
+    position: relative;
+    z-index: 1;
 }
 
 slider>* {
@@ -153,13 +162,13 @@ slide:nth-child(4) {
 
 slide p {
     font-family: 'Righteous', cursive, Arial;
-    text-shadow: 3px 3px #303030;
+    text-shadow: 3px 3px #2c2c2c;
     font-size: 45px;
     text-align: center;
     display: inline-block;
     width: 100%;
-    margin-top: 300px;
-    color: white;
+    margin-top: 330px;
+    color: rgb(250, 250, 250);
     background: none;
 }
 
@@ -191,43 +200,25 @@ slide p {
 .divSlideshow {
     background: #303030;
     width: 100%;
-    min-height: 600px;
-    max-height: 600px;
+    min-height: 800px;
+    max-height: 800px;
+    margin-top: -215px;
 }
 
 
 /* ---- END OF CSS FOR SLIDER IN HOMEPAGE ---- */
 
-.fixedHeader {
-    width: 100%;
-    max-width: 100%;
-    height: 265px;
-    max-height: 265px;
-    display: inline-block;
-}
-
-.divSlideshow {
-    background: #303030;
-    width: 100%;
-    min-height: 600px;
-    max-height: 600px;
-}
-
-.divSeparator {
-    background: #303030;
-    width: 100%;
-    min-height: 13px;
-}
-
 
 /* About me section in homepage */
 
 .aboutMe {
-    background: #303030;
+    background: #30303070;
     width: 100%;
-    height: auto;
+    height: 215px;
     padding: 10px;
     font-family: 'Poppins', sans-serif;
+    z-index: 2;
+    position: relative;
 }
 
 .about-me-text {
@@ -245,22 +236,38 @@ slide p {
     margin-top: -12px;
 }
 
+.intro-size {
+    font-size: 39px;
+}
+
+.email-size {
+    font-size: 18px;
+    text-shadow: 2px 2px #2c2c2c;
+}
+
 .about-me-contact img {
     margin: 5px 15px 0 15px;
+}
+
+@media screen and (max-width: 864px) {
+    .about-me-text {
+        font-size: 18px;
+    }
+    .intro-size {
+        font-size: 34px;
+    }
+    .divSlideshow {
+        margin-top: -200px;
+    }
+    .aboutMe {
+        height: 200px;
+    }
 }
 
 
 /* End of about-me section */
 
 footer {
-    background: #222222;
-    background-blend-mode: color-dodge 100%;
-    text-align: center;
-    color: white;
-    font-size: 12px;
-}
-
-.footer {
     background: #222222;
     background-blend-mode: color-dodge 100%;
     text-align: center;
@@ -280,4 +287,14 @@ footer {
     font-weight: bold;
     font-size: 50px;
     font-family: 'Poppins', sans-serif;
+}
+
+.testing-div {
+    min-height: 100px;
+}
+
+.divSeparator {
+    background: #303030;
+    width: 100%;
+    min-height: 13px;
 }
