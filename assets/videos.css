@@ -37,14 +37,21 @@
 }
 
 @media screen and (max-width: 864px) {
-    .divVideo iframe {
+    /* .divVideo iframe {
         width: 400px;
         height: 270px;
-    }
+    } */
     .aboutVideos h1 {
         font-size: 32px;
     }
     .aboutVideos p {
         font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .divVideo iframe {
+        width: 90vw;
+        height: 270px;
     }
 }

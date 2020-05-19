@@ -18,12 +18,6 @@ html {
     overflow-x: hidden;
 }
 
-header {
-    background: #1f1f1f url(images/header.jpg) 50% 15%;
-    font-family: calibri;
-    text-align: center;
-}
-
 body {
     width: 100%;
     height: 100vh;
@@ -35,21 +29,42 @@ body {
 }
 
 #home_body {
-    overflow-x: visible;
+    overflow-x: hidden;
 }
 
-header img {
+.header-container {
+    background: #1f1f1f url(images/header.jpg) 50% 15%;
+    font-family: calibri;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.header-container img {
     padding-top: 10px;
-    margin-bottom: -10px;
+    width: 150px;
 }
 
-header h1 {
+.header-container h1 {
     margin: -25px;
     color: rgb(240, 240, 240);
     font-family: 'Permanent Marker', Arial;
     font-size: 65px;
     text-shadow: 2px 2px #013979;
     padding-top: 15px;
+}
+
+.name-span {
+    color: rgb(240, 240, 240);
+    font-family: 'Permanent Marker', Arial;
+    font-size: 50px;
+    text-shadow: 2px 2px #013979;
 }
 
 nav ul {
@@ -62,7 +77,7 @@ nav ul li {
     text-shadow: 2px 2px #013979;
     font-weight: bold;
     font-size: 20px;
-    padding: 5px 30px 0px 30px;
+    padding: 5px 0px 0px 30px;
 }
 
 nav ul li a {
@@ -86,27 +101,20 @@ nav ul li a:active {
     color: #666666;
 }
 
-@media screen and (max-width: 864px) {
-    header h1 {
-        font-size: 48px;
+@media screen and (max-width: 624px) {
+    .header-container h1 {
+        font-size: 11vw;
     }
     nav ul li {
-        font-size: 20px;
-        padding: 5px 10px 0px 10px;
+        font-size: 18px;
+        padding: 5px 0px 0px 5vw;
     }
-}
-
-.fixedHeader {
-    width: 100%;
-    max-width: 100%;
-    height: 265px;
-    max-height: 265px;
-    display: inline-block;
-    user-select: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
+    .header-container img {
+        width: 25vw;
+    }
+    .name-span {
+        font-size: 9.5vw;
+    }
 }
 
 
@@ -203,11 +211,14 @@ slide p {
 }
 
 .divSlideshow {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
     background: #303030;
     width: 100%;
     min-height: 800px;
     max-height: 800px;
-    margin-top: -215px;
+    /* margin-top: -215px; */
     user-select: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -221,19 +232,22 @@ slide p {
 
 /* About me section in homepage */
 
+.homepage-container {
+    position: relative;
+    width: 100%;
+    background-color: red;
+}
+
 .aboutMe {
     background: #30303075;
     width: 100%;
-    height: 215px;
+    height: auto;
     padding: 10px;
     font-family: 'Poppins', sans-serif;
     z-index: 2;
-    position: relative;
-    user-select: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .about-me-text {
@@ -264,19 +278,22 @@ slide p {
     margin: 5px 15px 0 15px;
 }
 
-@media screen and (max-width: 864px) {
+@media screen and (max-width: 624px) {
+    .aboutMe {
+        height: auto;
+    }
     .about-me-text {
-        font-size: 18px;
+        font-size: 3.5vw;
     }
     .intro-size {
-        font-size: 34px;
+        font-size: 6.5vw;
     }
-    .divSlideshow {
-        margin-top: -200px;
+    .email-size {
+        font-size: 3.5vw;
     }
-    .aboutMe {
+    /* .aboutMe {
         height: 200px;
-    }
+    } */
 }
 
 
