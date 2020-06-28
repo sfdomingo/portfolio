@@ -1,0 +1,101 @@
+html{
+    scroll-behavior: smooth;
+}
+
+nav {
+    width: 100%;
+    background-color: #2c2c2c8c;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    padding: 20px;
+    width: auto;
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+#section1 {
+    height: 1000px;
+    width: 100%;
+    background-color: #97ff9f;
+    margin: 0;
+    padding-top: 60px;
+}
+
+#section1 h1 {
+    margin: 0;
+    color: black;
+    text-align: center;
+}
+
+#section2 {
+    height: 1000px;
+    width: 100%;
+    background-color: #fffd97;
+    margin: 0;
+    padding-top: 60px;
+}
+
+#section2 h1 {
+    margin: 0;
+    color: black;
+    text-align: center;
+}
+
+#section3 {
+    height: 1000px;
+    width: 100%;
+    background-color: #97ffe5;
+    margin: 0;
+    padding-top: 60px;
+}
+
+#section3 h1 {
+    margin: 0;
+    color: black;
+    text-align: center;
+}
+
+#section4 {
+    height: 1000px;
+    width: 100%;
+    background-color: #ff9797;
+    margin: 0;
+    padding-top: 60px;
+}
+
+#section4 h1 {
+    margin: 0;
+    color: black;
+    text-align: center;
+}
+
+#section5 {
+    height: 1000px;
+    width: 100%;
+    background-color: #a797ff;
+    margin: 0;
+    padding-top: 60px;
+}
+
+#section5 h1 {
+    margin: 0;
+    color: black;
+    text-align: center;
+}
