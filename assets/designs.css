@@ -28,7 +28,7 @@
     width: 380px;
     padding: 8px;
     filter: grayscale(100);
-    transition: 1s;
+    transition: 0.4s;
 }
 
 .gallery-img img:hover {
