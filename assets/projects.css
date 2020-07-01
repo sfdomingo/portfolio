@@ -1,5 +1,4 @@
 .projects-container {
-  position: relative;
   width: 100%;
   background: #303030 url(images/bg.jpg);
   background-position: center;
@@ -12,10 +11,9 @@
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 10px 0 10px 0;
-
   /* padding-top: 160px; */
-  z-index: 1;
 }
 
 .projects {
@@ -25,37 +23,92 @@
 }
 
 .rectangle {
-  background-color: rgba(141, 141, 141, 0.7);
-  width: 450px;
-  height: 400px;
+  background-color: rgba(255, 255, 255, 0.548);
+  width: 410px;
+  height: 365px;
   /* border: 2px solid rgb(0, 0, 0); */
-  border-radius: 30px;
+  border-radius: 20px;
   box-shadow: #303030;
-  padding: 10px;
+  padding: 0;
   margin: 0px 10px 0px 10px;
-  transition: 0.4s;
+  transition: 0.5s ease;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .rectangle p {
   font-family: "Poppins", sans-serif;
   font-size: 15px;
+  margin: 10px;
   /* font-weight: bold; */
 }
 
 .rectangle-image img {
-  width: 400px;
+  width: 100%;
   height: 250px;
-  border: 2px solid rgba(19, 19, 19, 0.9);
-  border-radius: 30px;
+  object-fit: cover;
 }
+
+/* .rectangle .project-title {
+  width: 100%;
+  top: 225px;
+  left: 0;
+  position: absolute;
+}
+
+.rectangle .project-title .project-title-text {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  margin: 0px 100px 0px 100px;
+} */
 
 .icon-link img {
   margin: 0px 10px 0px 10px;
   width: 35px;
 }
 
-.rectangle:hover {
-  transform: scale(1.1);
+.rectangle-image {
+  /* background-color: red; */
+  border-radius: 30px;
+  margin: 0 0px 0px 0px;
+  position: relative;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(27, 27, 27, 0.75);
+}
+
+.overlay-text {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  white-space: normal;
+}
+
+.rectangle:hover {
+  transform: scale(1.02);
+  background-color: rgba(200, 208, 255, 0.80);
+}
+
+.rectangle:hover .overlay {
+  opacity: 1;
+}
