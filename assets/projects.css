@@ -91,7 +91,7 @@
 
 .rectangle:hover {
   transform: scale(1.02);
-  background-color: rgba(200, 208, 255, 0.8);
+  background-color: rgba(162, 244, 255, 0.55);
 }
 
 .rectangle:hover .overlay {
