@@ -17,7 +17,7 @@
   /* padding-top: 160px; */
 }
 
-.projects {
+.projects-row {
   display: flex;
   flex-direction: row;
   margin: 10px 0 10px 0;
@@ -99,7 +99,7 @@
 }
 
 @media screen and (max-width: 1150px) {
-  .projects {
+  .projects-row {
     flex-direction: column;
     margin: 0;
   }
