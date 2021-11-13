@@ -112,3 +112,14 @@
     margin: 0px 10px 10px 10px;
   }
 }
+
+.games-heading {
+  text-align: center;
+  padding: 10px;
+  margin: 0px;
+  font-family: "Poppins";
+  font-weight: 600;
+  color: #a5fffd;
+  text-shadow: 2px 2px #013979;
+  font-size: 40px;
+}
